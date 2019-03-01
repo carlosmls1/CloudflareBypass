@@ -14,5 +14,5 @@ cookie_arg, user_agent = cfscrape.get_cookie_string("http://"+sys.argv[1], user_
 file = open(sys.argv[1]+'-cookies.txt', 'w')
 file.write(cookie_arg)
 file.close()
-print cookie_arg;
+print (cookie_arg)
 #result = subprocess.check_output(["curl", "--cookie", cookie_arg, "-A", user_agent, "http://animeflv.net"])
