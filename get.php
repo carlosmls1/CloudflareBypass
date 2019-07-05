@@ -1,6 +1,5 @@
 <?php
-//$url=$_GET['url'];
-$url  = "https://animeflv.net/ver/51469/boogiepop-wa-warawanai-2019-14";
+$url  = "";
 $page = getpage($url);
 if ($page['status'] == "503") {
     exec('python scrapper.py "' . getHost($url) . '"');
